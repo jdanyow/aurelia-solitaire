@@ -4,6 +4,10 @@ body {
   background-image: url(../img/45-degree-fabric-dark.png);
 }
 
+.github-fork-ribbon {
+  background-color: #277714;
+}
+
 .container > .row {
   height: 180px;
 }

@@ -1,5 +1,12 @@
 <template>
 	<require from='./pile'></require>
+	
+	<div class="github-fork-ribbon-wrapper right">
+    <div class="github-fork-ribbon">
+      <a href="https://github.com/jdanyow/aurelia-solitaire">Fork me on GitHub</a>
+    </div>
+  </div>
+	
 	<div class="container">
 		<div class="row first">			
 			<pile repeat.for="i of 6" pile.bind="$parent.piles[i]" class="column one" 
