@@ -1,0 +1,8 @@
+<template>
+	<require from='./card'></require>
+	<div class="pile ${pile.type}">
+		<div class="placeholder" click.delegate="game.placeHolderClicked(pile)"></div>
+		<card if.bind="pile.next" card.bind="pile.next"></card>
+		<div class="drop-target" if.bind="hasDropTarget && game.dragging"></div>
+	</div>	
+</template>
