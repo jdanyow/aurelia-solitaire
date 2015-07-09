@@ -8,6 +8,7 @@ const doubleClickDelay = 500;
 export class Game {	
 	piles;
 	dragging = false;
+	win = false;
 
 	constructor() {
 		this.deal();
@@ -73,6 +74,7 @@ export class Game {
 			.length;
 		if (completedPiles === 4) {
 			new Audio('sounds/sheen-just-winning-everyday-defeat-not-an-option.wav').play();
+			this.win = true;
 		}			
 	}
 
@@ -104,6 +106,7 @@ export class Game {
 		}
 		this.detachCard(card);
 		this.getLastCard(pile).next = card;
+		this.checkWin();
 	}
 
 	cardClicked(card) {

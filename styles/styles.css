@@ -77,3 +77,11 @@ img.card {
   -webkit-align-items: center;
   align-items: center;
 }
+
+.win {
+  font-family: sans-serif;
+  font-size: 60px;
+  text-align: center;
+  color: #277714;
+  text-align: center;
+}

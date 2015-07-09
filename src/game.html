@@ -16,5 +16,7 @@
 		<div class="row">
 			<pile repeat.for="i of 7" pile.bind="$parent.piles[i + 6]" class="column one"></pile>
 		</div>
+
+		<div class="win" if.bind="win">You Win!</div>		
 	</div>
 </template>
