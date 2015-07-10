@@ -1,0 +1,52 @@
+{
+  "name": "ticky",
+  "version": "1.0.0",
+  "description": "Run a callback as soon as possible",
+  "main": "ticky-browser.js",
+  "browser": "ticky-browser.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bevacqua/ticky.git"
+  },
+  "author": {
+    "name": "Nicolas Bevacqua",
+    "email": "nicolasbevacqua@gmail.com",
+    "url": "http://bevacqua.io/"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bevacqua/ticky/issues"
+  },
+  "homepage": "https://github.com/bevacqua/ticky#readme",
+  "gitHead": "f5d22c9a005b387348ca96cc07cbf403f6484931",
+  "_id": "ticky@1.0.0",
+  "_shasum": "e87f38ee0491ea32f62e8f0567ba9638b29f049c",
+  "_from": ".",
+  "_npmVersion": "3.0.0",
+  "_nodeVersion": "2.2.1",
+  "_npmUser": {
+    "name": "bevacqua",
+    "email": "nicolasbevacqua@gmail.com"
+  },
+  "maintainers": [
+    {
+      "name": "bevacqua",
+      "email": "nicolasbevacqua@gmail.com"
+    }
+  ],
+  "dist": {
+    "shasum": "e87f38ee0491ea32f62e8f0567ba9638b29f049c",
+    "tarball": "http://registry.npmjs.org/ticky/-/ticky-1.0.0.tgz"
+  },
+  "format": "cjs",
+  "ignore": [
+    "node_modules"
+  ],
+  "registry": "npm",
+  "dependencies": {
+    "process": "github:jspm/nodelibs-process@^0.1.0"
+  }
+}

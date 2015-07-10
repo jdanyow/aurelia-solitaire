@@ -1,0 +1,1 @@
+module.exports = require("npm:atoa@1.0.0/atoa");

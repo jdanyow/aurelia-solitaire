@@ -1,0 +1,49 @@
+{
+  "name": "atoa",
+  "version": "1.0.0",
+  "description": "Creates a true array based on `arraylike`, starting at `startIndex`.",
+  "main": "atoa.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bevacqua/atoa.git"
+  },
+  "author": {
+    "name": "Nicolas Bevacqua",
+    "email": "nicolasbevacqua@gmail.com",
+    "url": "http://bevacqua.io/"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bevacqua/atoa/issues"
+  },
+  "homepage": "https://github.com/bevacqua/atoa#readme",
+  "gitHead": "51b7ce9564add138ef1b6eaeb020665ab7d7c4e1",
+  "_id": "atoa@1.0.0",
+  "_shasum": "0cc0e91a480e738f923ebc103676471779b34a49",
+  "_from": ".",
+  "_npmVersion": "3.0.0",
+  "_nodeVersion": "2.2.1",
+  "_npmUser": {
+    "name": "bevacqua",
+    "email": "nicolasbevacqua@gmail.com"
+  },
+  "maintainers": [
+    {
+      "name": "bevacqua",
+      "email": "nicolasbevacqua@gmail.com"
+    }
+  ],
+  "dist": {
+    "shasum": "0cc0e91a480e738f923ebc103676471779b34a49",
+    "tarball": "http://registry.npmjs.org/atoa/-/atoa-1.0.0.tgz"
+  },
+  "format": "cjs",
+  "ignore": [
+    "node_modules"
+  ],
+  "registry": "npm",
+  "dependencies": {}
+}

@@ -1,0 +1,1 @@
+module.exports = require("npm:ticky@1.0.0/ticky-browser");

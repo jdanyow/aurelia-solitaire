@@ -1,0 +1,32 @@
+<template>
+	<require from='./pile-element'></require>
+	
+	<div class="github-fork-ribbon-wrapper right">
+    <div class="github-fork-ribbon">
+      <a href="https://github.com/jdanyow/aurelia-solitaire">Fork me on GitHub</a>
+    </div>
+  </div>
+	
+	<div class="container">
+		<div class="row first">
+			<pile pile.bind="deck" class="column one"></pile> 
+			<pile pile.bind="waste" class="column one"></pile> 
+
+			<pile pile.bind="foundation[0]" class="column one offset-by-one"></pile> 
+			<pile pile.bind="foundation[1]" class="column one"></pile> 
+			<pile pile.bind="foundation[2]" class="column one"></pile> 
+			<pile pile.bind="foundation[3]" class="column one"></pile> 
+		</div>
+		<div class="row">
+			<pile pile.bind="tableau[0]" class="column one"></pile>
+			<pile pile.bind="tableau[1]" class="column one"></pile>
+			<pile pile.bind="tableau[2]" class="column one"></pile>
+			<pile pile.bind="tableau[3]" class="column one"></pile>
+			<pile pile.bind="tableau[4]" class="column one"></pile>
+			<pile pile.bind="tableau[5]" class="column one"></pile>
+			<pile pile.bind="tableau[6]" class="column one"></pile>
+		</div>
+
+		<div class="win" if.bind="win">You Win!</div>		
+	</div>
+</template>

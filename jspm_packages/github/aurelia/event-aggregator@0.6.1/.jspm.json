@@ -1,0 +1,78 @@
+{
+  "name": "aurelia-event-aggregator",
+  "version": "0.6.1",
+  "description": "A lightweight pub/sub messaging system for app-wide or per-object loosely coupled events.",
+  "keywords": [
+    "aurelia",
+    "event aggregator",
+    "events",
+    "pub/sub"
+  ],
+  "homepage": "http://aurelia.io",
+  "bugs": {
+    "url": "https://github.com/aurelia/event-aggregator/issues"
+  },
+  "license": "MIT",
+  "author": "Rob Eisenberg <rob@bluespire.com> (http://robeisenberg.com/)",
+  "main": "index",
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/aurelia/event-aggregator"
+  },
+  "jspm": {
+    "main": "index",
+    "format": "amd",
+    "directories": {
+      "lib": "dist/amd"
+    },
+    "dependencies": {
+      "aurelia-logging": "github:aurelia/logging@^0.6.0"
+    },
+    "devDependencies": {
+      "babel": "npm:babel-core@^5.1.13",
+      "babel-runtime": "npm:babel-runtime@^5.1.13",
+      "core-js": "npm:core-js@^0.9.4"
+    }
+  },
+  "devDependencies": {
+    "babel": "npm:babel-core@^5.1.13",
+    "babel-runtime": "npm:babel-runtime@^5.1.13",
+    "core-js": "npm:core-js@^0.9.4"
+  },
+  "aurelia": {
+    "usedBy": [
+      "aurelia-bootstrapper",
+      "aurelia-router"
+    ],
+    "documentation": {
+      "links": [
+        {
+          "rel": "license",
+          "mediaType": "text/plain",
+          "title": "The MIT License (MIT)",
+          "href": "LICENSE"
+        },
+        {
+          "rel": "describedby",
+          "mediaType": "application/aurelia-doc+json",
+          "title": "API",
+          "href": "doc/api.json"
+        },
+        {
+          "rel": "version-history",
+          "mediaType": "text/markdown",
+          "title": "Change Log",
+          "href": "doc/CHANGELOG.md"
+        }
+      ]
+    }
+  },
+  "format": "amd",
+  "directories": {
+    "lib": "dist/amd"
+  },
+  "registry": "github",
+  "dependencies": {
+    "aurelia-logging": "github:aurelia/logging@^0.6.0"
+  }
+}
