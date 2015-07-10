@@ -3,5 +3,5 @@ export function configure(aurelia) {
     .standardConfiguration()
     .developmentLogging();
 
-  aurelia.start().then(a => a.setRoot('game'));
+  aurelia.start().then(a => a.setRoot('klondike'));
 }

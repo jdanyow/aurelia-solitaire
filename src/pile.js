@@ -1,17 +1,40 @@
-import {bindable, inject} from 'aurelia-framework';
-import {pileType} from './pile-type';
-import {Game} from './game';
-
-@inject(Game)
 export class Pile {
-	@bindable
-	pile;
+	type;
+	canDrag;
+	canDrop;
+	next = null;
 
-	constructor(game) {
-		this.game = game;
+	constructor(type, canDrag, canDrop) {
+		this.type = type;
+		this.canDrag = canDrag;
+		this.canDrop = canDrop;
 	}
 
-	bind() {
-		this.hasDropTarget = this.pile.type === pileType.tableau || this.pile.type === pileType.foundation;
+	getLastCard(orSelf, nextToLast) {
+		let card = orSelf ? this : this.next;
+		while (card && card.next && (!nextToLast || card.next.next)) {
+			card = card.next;
+		}
+		return card;
+	}
+
+	flip() {
+		var card = this.next;
+		if (card) {
+			this.next = this.getLastCard();
+			reverse(card)
+		}
 	}
 }
+
+function reverse(card) {
+	let next = card.next;
+	card.next = null;
+	card.up = !card.up;
+	if (next) {
+		next = reverse(next);
+		next.next = card;
+	}
+	return card;
+}
+	
