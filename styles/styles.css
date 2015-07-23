@@ -13,9 +13,8 @@ body {
 }
 
 img.card {
-  max-width: 100%;
-  height: auto;
-  width: auto;
+  height: 160px;
+  width: 110px;
   display: block;
   border-radius: 3px;
   

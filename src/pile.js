@@ -25,6 +25,18 @@ export class Pile {
 			reverse(card)
 		}
 	}
+
+	toString() {
+		var card = this.next, s = '';
+		if (!card) {
+			return '(empty)';
+		}
+		while(card) {
+			s = card + ' ' + s;
+			card = card.next;
+		}
+		return s;
+	}
 }
 
 function reverse(card) {
@@ -37,4 +49,3 @@ function reverse(card) {
 	}
 	return card;
 }
-	

@@ -5,10 +5,10 @@ export const doubleClickDelay = 500;
 
 class CardEvent {
 	card;
-	
+
 	constructor(card) {
 		this.card = card;
-	}	
+	}
 }
 
 export class CardClickedEvent extends CardEvent {
@@ -23,12 +23,12 @@ export class CardDroppedEvent extends CardEvent {
 	constructor(card, pile) {
 		super(card);
 		this.pile = pile;
-	}	
+	}
 }
 
 export class PlaceholderClickedEvent {
 	pile;
-	
+
 	constructor(pile) {
 		this.pile = pile;
 	}
@@ -38,22 +38,22 @@ export class PlaceholderClickedEvent {
 export class CardClickPublisher {
 	eventAggregator;
 	lastCardClicked;
-	
+
 	constructor(eventAggregator) {
 		this.eventAggregator = eventAggregator;
 	}
 
 	publish(card) {
-		console.log(`${card.rank} of ${card.suit.name} clicked`);
+		console.log(`${card.rank} of ${card.suit.name}s clicked`);
 		let event = new CardClickedEvent(card);
-		
+
 		this.eventAggregator.publish(event);
-		
+
 		if (event.handled) {
 			return;
 		}
-		
-		// double click?		
+
+		// double click?
 		if (this.lastCardClicked === card) {
 			this.lastCardClicked = null;
 			this.eventAggregator.publish(new CardDoubleClickedEvent(card));

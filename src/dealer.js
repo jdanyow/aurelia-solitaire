@@ -8,7 +8,7 @@ export class Dealer {
   shuffle() {
     let cards = this.cards = [], suit, rank;
 
-    new Audio('sounds/shuffling-cards.wav').play();
+    new Audio('sounds/shuffling-cards.mp3').play();
 
     for (suit = 0; suit < 4; suit++) {
       for (rank = 1; rank < 14; rank++) {

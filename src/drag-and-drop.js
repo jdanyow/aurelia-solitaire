@@ -14,7 +14,7 @@ export class DragAndDrop {
 
 		let dragApi = dragula({
 			isContainer: el => {
-				if (el === null) {
+				if (!el) {
 					return false;
 				}
 				if (dragApi.dragging) {

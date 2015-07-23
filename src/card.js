@@ -8,4 +8,8 @@ export class Card {
 		this.suit = suit;
 		this.rank = rank;
 	}
+
+	toString() {
+		return `${this.rank}${this.suit.symbol}${this.up ? '^' : ''}`;
+	}
 }

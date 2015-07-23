@@ -4,10 +4,10 @@ import {Dealer} from './dealer';
 import {Table} from './table';
 import {Pile} from './pile';
 import {
-CardClickedEvent,
-CardDoubleClickedEvent,
-PlaceholderClickedEvent,
-CardDroppedEvent
+	CardClickedEvent,
+	CardDoubleClickedEvent,
+	PlaceholderClickedEvent,
+	CardDroppedEvent
 } from './events';
 
 var pileType = {
@@ -30,8 +30,8 @@ export class Klondike {
 		this.table = table;
 
 		dealer.shuffle();
-		
-		// create the deck, waste, 4 foundation and 7 tableau piles. 
+
+		// create the deck, waste, 4 foundation and 7 tableau piles.
 		for (let i = 0; i < 4; i++) {
 			let pile = new Pile(pileType.foundation, true, true);
 			this.foundation.push(pile);
@@ -52,7 +52,7 @@ export class Klondike {
 
 		this.waste = new Pile(pileType.waste, true, false);
 		table.addPile(this.waste);
-		
+
 		// subscribe to game events
 		eventAggregator.subscribe(CardClickedEvent, ::this.cardClicked);
 		eventAggregator.subscribe(CardDoubleClickedEvent, ::this.cardDoubleClicked);
@@ -61,11 +61,11 @@ export class Klondike {
 	}
 
 	cardClicked(e) {
-		let card = e.card, 
+		let card = e.card,
 				pile = this.table.getPile(card);
 		if (card.next || pile.type !== pileType.deck) {
 			return;
-		}		
+		}
 		// top card in deck pile clicked... waste a card.
 		this.table.moveCard(card, this.waste.getLastCard(true));
 		card.up = true;
@@ -73,12 +73,12 @@ export class Klondike {
 
 	cardDoubleClicked(e) {
 		let card = e.card,
-			pile = this.table.getPile(card);
+			  pile = this.table.getPile(card);
 		// ensure card is face up, top card, in waste or tableau piles.
 		if (!card.up || card.next || pile.type === pileType.foundation) {
 			return;
 		}
-		
+
 		// attempt to find a foundation pile to place the card in.
 		pile = this.foundation
 			.map(pile => pile.getLastCard(true))
@@ -91,14 +91,14 @@ export class Klondike {
 		this.table.moveCard(card, pile, true);
 		this.checkWin();
 	}
-	
+
 	isValidMoveToTableau(card, pile, pileLast) {
 		if (pile.type !== pileType.tableau) {
 			return false;
 		}
 		if (pile.next) {
 			return pileLast.rank - card.rank === 1 && pileLast.suit.color !== card.suit.color;
-		} 
+		}
 		return card.rank === 13;
 	}
 
@@ -139,7 +139,7 @@ export class Klondike {
 			.filter(card => card && card.rank === 13)
 			.length;
 		if (completedPiles === 4) {
-			new Audio('sounds/sheen-just-winning-everyday-defeat-not-an-option.wav').play();
+			new Audio('sounds/sheen-just-winning-everyday-defeat-not-an-option.mp3').play();
 			this.win = true;
 		}
 	}
