@@ -1,0 +1,1 @@
+module.exports = require("npm:dragula@2.1.2/dragula");

@@ -1,0 +1,1 @@
+module.exports = require("npm:custom-event@1.0.0/index");

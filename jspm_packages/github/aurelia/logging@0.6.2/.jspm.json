@@ -1,0 +1,73 @@
+{
+  "name": "aurelia-logging",
+  "version": "0.6.2",
+  "description": "A minimal but effective logging mechanism with support for log levels and pluggable log appenders.",
+  "keywords": [
+    "aurelia",
+    "logging"
+  ],
+  "homepage": "http://aurelia.io",
+  "bugs": {
+    "url": "https://github.com/aurelia/logging/issues"
+  },
+  "license": "MIT",
+  "author": "Rob Eisenberg <rob@bluespire.com> (http://robeisenberg.com/)",
+  "main": "aurelia-logging",
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/aurelia/logging"
+  },
+  "jspm": {
+    "main": "aurelia-logging",
+    "format": "amd",
+    "directories": {
+      "lib": "dist/amd"
+    },
+    "devDependencies": {
+      "babel": "npm:babel-core@^5.1.13",
+      "babel-runtime": "npm:babel-runtime@^5.1.13",
+      "core-js": "npm:core-js@^0.9.4"
+    }
+  },
+  "devDependencies": {
+    "babel": "npm:babel-core@^5.1.13",
+    "babel-runtime": "npm:babel-runtime@^5.1.13",
+    "core-js": "npm:core-js@^0.9.4"
+  },
+  "aurelia": {
+    "usedBy": [
+      "aurelia-framework",
+      "aurelia-templating",
+      "aurelia-templating-binding",
+      "aurelia-templating-resources",
+      "aurelia-dependency-injection"
+    ],
+    "documentation": {
+      "links": [
+        {
+          "rel": "license",
+          "mediaType": "text/plain",
+          "title": "The MIT License (MIT)",
+          "href": "LICENSE"
+        },
+        {
+          "rel": "describedby",
+          "mediaType": "application/aurelia-doc+json",
+          "title": "API",
+          "href": "doc/api.json"
+        },
+        {
+          "rel": "version-history",
+          "mediaType": "text/markdown",
+          "title": "Change Log",
+          "href": "doc/CHANGELOG.md"
+        }
+      ]
+    }
+  },
+  "format": "amd",
+  "directories": {
+    "lib": "dist/amd"
+  },
+  "registry": "github"
+}
