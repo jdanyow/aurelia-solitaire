@@ -21,12 +21,12 @@ System.config({
     "aurelia-dependency-injection": "github:aurelia/dependency-injection@0.9.1",
     "aurelia-event-aggregator": "github:aurelia/event-aggregator@0.6.2",
     "aurelia-framework": "github:aurelia/framework@0.13.4",
-    "babel": "npm:babel-core@5.6.15",
-    "babel-runtime": "npm:babel-runtime@5.6.15",
+    "babel": "npm:babel-core@5.8.19",
+    "babel-runtime": "npm:babel-runtime@5.8.19",
     "core-js": "npm:core-js@0.9.18",
     "css": "github:systemjs/plugin-css@0.1.13",
     "dragula": "npm:dragula@2.1.2",
-    "github:aurelia/binding@0.8.3": {
+    "github:aurelia/binding@0.8.4": {
       "aurelia-dependency-injection": "github:aurelia/dependency-injection@0.9.1",
       "aurelia-metadata": "github:aurelia/metadata@0.7.1",
       "aurelia-task-queue": "github:aurelia/task-queue@0.6.1",
@@ -42,7 +42,7 @@ System.config({
       "aurelia-router": "github:aurelia/router@0.10.3",
       "aurelia-templating": "github:aurelia/templating@0.13.13",
       "aurelia-templating-binding": "github:aurelia/templating-binding@0.13.2",
-      "aurelia-templating-resources": "github:aurelia/templating-resources@0.13.2",
+      "aurelia-templating-resources": "github:aurelia/templating-resources@0.13.3",
       "aurelia-templating-router": "github:aurelia/templating-router@0.14.1",
       "core-js": "npm:core-js@0.9.18"
     },
@@ -55,7 +55,7 @@ System.config({
       "aurelia-logging": "github:aurelia/logging@0.6.2"
     },
     "github:aurelia/framework@0.13.4": {
-      "aurelia-binding": "github:aurelia/binding@0.8.3",
+      "aurelia-binding": "github:aurelia/binding@0.8.4",
       "aurelia-dependency-injection": "github:aurelia/dependency-injection@0.9.1",
       "aurelia-loader": "github:aurelia/loader@0.8.3",
       "aurelia-logging": "github:aurelia/logging@0.6.2",
@@ -96,12 +96,12 @@ System.config({
       "core-js": "npm:core-js@0.9.18"
     },
     "github:aurelia/templating-binding@0.13.2": {
-      "aurelia-binding": "github:aurelia/binding@0.8.3",
+      "aurelia-binding": "github:aurelia/binding@0.8.4",
       "aurelia-logging": "github:aurelia/logging@0.6.2",
       "aurelia-templating": "github:aurelia/templating@0.13.13"
     },
-    "github:aurelia/templating-resources@0.13.2": {
-      "aurelia-binding": "github:aurelia/binding@0.8.3",
+    "github:aurelia/templating-resources@0.13.3": {
+      "aurelia-binding": "github:aurelia/binding@0.8.4",
       "aurelia-dependency-injection": "github:aurelia/dependency-injection@0.9.1",
       "aurelia-logging": "github:aurelia/logging@0.6.2",
       "aurelia-task-queue": "github:aurelia/task-queue@0.6.1",
@@ -116,7 +116,7 @@ System.config({
       "aurelia-templating": "github:aurelia/templating@0.13.13"
     },
     "github:aurelia/templating@0.13.13": {
-      "aurelia-binding": "github:aurelia/binding@0.8.3",
+      "aurelia-binding": "github:aurelia/binding@0.8.4",
       "aurelia-dependency-injection": "github:aurelia/dependency-injection@0.9.1",
       "aurelia-html-template-element": "github:aurelia/html-template-element@0.2.0",
       "aurelia-loader": "github:aurelia/loader@0.8.3",
@@ -132,7 +132,7 @@ System.config({
     "github:jspm/nodelibs-process@0.1.1": {
       "process": "npm:process@0.10.1"
     },
-    "npm:babel-runtime@5.6.15": {
+    "npm:babel-runtime@5.8.19": {
       "process": "github:jspm/nodelibs-process@0.1.1"
     },
     "npm:contra@1.9.1": {
@@ -144,13 +144,6 @@ System.config({
       "process": "github:jspm/nodelibs-process@0.1.1",
       "systemjs-json": "github:systemjs/plugin-json@0.1.0"
     },
-    "npm:crossvent@1.3.2": {
-      "child_process": "github:jspm/nodelibs-child_process@0.1.0",
-      "fs": "github:jspm/nodelibs-fs@0.1.2",
-      "path": "github:jspm/nodelibs-path@0.1.0",
-      "process": "github:jspm/nodelibs-process@0.1.1",
-      "systemjs-json": "github:systemjs/plugin-json@0.1.0"
-    },
     "npm:crossvent@1.5.0": {
       "child_process": "github:jspm/nodelibs-child_process@0.1.0",
       "custom-event": "npm:custom-event@1.0.0",
@@ -158,10 +151,6 @@ System.config({
       "path": "github:jspm/nodelibs-path@0.1.0",
       "process": "github:jspm/nodelibs-process@0.1.1",
       "systemjs-json": "github:systemjs/plugin-json@0.1.0"
-    },
-    "npm:dragula@2.0.3": {
-      "contra": "npm:contra@1.9.1",
-      "crossvent": "npm:crossvent@1.3.2"
     },
     "npm:dragula@2.1.2": {
       "contra": "npm:contra@1.9.1",
