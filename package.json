@@ -47,12 +47,12 @@
   },
   "jspm": {
     "dependencies": {
-      "aurelia-bootstrapper": "github:aurelia/bootstrapper@^0.14.0",
-      "aurelia-dependency-injection": "github:aurelia/dependency-injection@^0.9.0",
-      "aurelia-event-aggregator": "github:aurelia/event-aggregator@^0.6.1",
-      "aurelia-framework": "github:aurelia/framework@^0.13.1",
+      "aurelia-bootstrapper": "github:aurelia/bootstrapper@^0.14.1",
+      "aurelia-dependency-injection": "github:aurelia/dependency-injection@^0.9.1",
+      "aurelia-event-aggregator": "github:aurelia/event-aggregator@^0.6.2",
+      "aurelia-framework": "github:aurelia/framework@^0.13.4",
       "css": "github:systemjs/plugin-css@^0.1.11",
-      "dragula": "npm:dragula@^2.0.3"
+      "dragula": "npm:dragula@^2.1.2"
     },
     "devDependencies": {
       "babel": "npm:babel-core@^5.1.13",
