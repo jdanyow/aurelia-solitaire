@@ -1,0 +1,31 @@
+<template>
+	<require from='./card-element'></require>
+
+	<!-- recursive custom element issue (not chrome) -->
+	<div style="heigh: 50px">
+		<div style="float: left; display: inline; width: 30px">
+			<card if.bind="deck.next" card.bind="deck.next"></card>
+			&nbsp;
+		</div>
+		<div style="float: left; display: inline; width: 30px">
+			<card if.bind="waste.next" card.bind="waste.next"></card>
+			&nbsp;
+		</div>
+		<div style="clear: both;"></div>
+	</div>
+
+	<!-- compose issue (all browsers) -->
+	<!-- <div style="heigh: 50px">
+		<div style="float: left; display: inline; width: 30px">
+			<compose if.bind="deck.next" view-model.bind="deck.next" view="recursive.html"></compose>
+			&nbsp;
+		</div>
+		<div style="float: left; display: inline; width: 30px">
+			<compose if.bind="waste.next" view-model.bind="waste.next" view="recursive.html"></compose>
+			&nbsp;
+		</div>
+		<div style="clear: both;"></div>
+	</div> -->
+
+	<button click.delegate="start()">Start</button>
+</template>

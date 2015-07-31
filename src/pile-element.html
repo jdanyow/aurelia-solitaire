@@ -1,8 +1,0 @@
-<template>
-	<require from='./card-element'></require>
-	<div class="pile ${pile.type}">
-		<div class="placeholder" click.delegate="placeholderClicked()"></div>
-		<card if.bind="pile.next" card.bind="pile.next"></card>
-		<div class="drop-target" if.bind="pile.canDrop && dragAndDrop.dragging"></div>
-	</div>	
-</template>
