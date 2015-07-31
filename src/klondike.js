@@ -67,8 +67,8 @@ export class Klondike {
 			return;
 		}
 		// top card in deck pile clicked... waste a card.
-		this.table.moveCard(card, this.waste.getLastCard(true));
 		card.up = true;
+		this.table.moveCard(card, this.waste.getLastCard(true));
 	}
 
 	cardDoubleClicked(e) {
@@ -129,7 +129,7 @@ export class Klondike {
 			return;
 		}
 		// reset the deck.
-		this.waste.flip();
+		this.table.flipPile(this.waste);
 		this.table.moveCard(this.waste.next, this.deck);
 	}
 

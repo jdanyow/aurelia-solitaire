@@ -1,15 +1,12 @@
 export class Card {
 	suit;
 	rank;
-	up = false;
+	up;
 	next = null;
 
-	constructor(suit, rank) {
+	constructor(suit, rank, up) {
 		this.suit = suit;
 		this.rank = rank;
-	}
-
-	toString() {
-		return `${this.rank}${this.suit.symbol}${this.up ? '^' : ''}`;
+		this.up = up;
 	}
 }
