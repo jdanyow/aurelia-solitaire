@@ -12,7 +12,7 @@ export class Dealer {
 
     for (suit = 0; suit < 4; suit++) {
       for (rank = 1; rank < 14; rank++) {
-        cards.push(new Card(suits[suit], rank));
+        cards.push(new Card(suits[suit], rank, false));
       }
     }
     shuffle(cards);
