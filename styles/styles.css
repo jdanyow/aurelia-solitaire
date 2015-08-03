@@ -35,8 +35,10 @@ img.card {
 
 .drop-target {
   position: relative;
-  width: 110px;
+  width: 125px;
   height: 160px;
+  margin-left: -7.5px;
+  padding-left: 7.5px;
   margin-bottom: -160px;
 }
 
