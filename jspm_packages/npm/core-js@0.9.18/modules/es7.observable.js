@@ -12,7 +12,7 @@ var $ = require("./$"),
 function cancelSubscription(observer) {
   var subscription = observer._subscription;
   if (!subscription)
-    return ;
+    return;
   observer._subscription = undefined;
   try {
     subscription.unsubscribe();
@@ -98,7 +98,7 @@ $mix(Observable.prototype, {
     });
     return {unsubscribe: function() {
         if (unsubscribed)
-          return ;
+          return;
         unsubscribed = true;
         if (subscription)
           subscription.unsubscribe();

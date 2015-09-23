@@ -16,7 +16,7 @@
       if (inModule) {
         module.exports = runtime;
       }
-      return ;
+      return;
     }
     runtime = global.regeneratorRuntime = inModule ? module.exports : {};
     function wrap(innerFn, outerFn, self, tryLocsList) {

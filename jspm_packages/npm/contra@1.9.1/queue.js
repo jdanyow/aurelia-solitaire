@@ -39,13 +39,13 @@ module.exports = function queue(worker, concurrency) {
   }
   function labor() {
     if (paused || load >= max) {
-      return ;
+      return;
     }
     if (!q.length) {
       if (load === 0) {
         qq.emit('drain');
       }
-      return ;
+      return;
     }
     load++;
     var job = q.pop();

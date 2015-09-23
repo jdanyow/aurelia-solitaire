@@ -78,7 +78,7 @@
       }).join('\n'), function(err) {
         var TARGET;
         if (check(err)) {
-          return ;
+          return;
         }
         TARGET = "./__tmp" + Math.random() + "__.js";
         webpack({
@@ -89,19 +89,19 @@
           }
         }, function(err, info) {
           if (check(err)) {
-            return ;
+            return;
           }
           readFile(TARGET, function(err, script) {
             if (check(err)) {
-              return ;
+              return;
             }
             unlink(ENTRY, function(err) {
               if (check(err)) {
-                return ;
+                return;
               }
               unlink(TARGET, function(err) {
                 if (check(err)) {
-                  return ;
+                  return;
                 }
                 next(null, "" + banner + "\n!function(undefined){\n'use strict';\nvar __e = null, __g = null;\n\n" + script + "\n// CommonJS export\nif(typeof module != 'undefined' && module.exports)module.exports = __e;\n// RequireJS export\nelse if(typeof define == 'function' && define.amd)define(function(){return __e});\n// Export to global object\nelse __g.core = __e;\n}();");
               });

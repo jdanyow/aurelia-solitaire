@@ -1746,7 +1746,7 @@
         var record = this,
             promise;
         if (record.d)
-          return ;
+          return;
         record.d = true;
         record = record.r || record;
         record.v = value;
@@ -1770,7 +1770,7 @@
         var record = this,
             then;
         if (record.d)
-          return ;
+          return;
         record.d = true;
         record = record.r || record;
         try {

@@ -5,7 +5,7 @@ module.exports = function once(fn) {
   var disposed;
   function disposable() {
     if (disposed) {
-      return ;
+      return;
     }
     disposed = true;
     (fn || noop).apply(null, arguments);

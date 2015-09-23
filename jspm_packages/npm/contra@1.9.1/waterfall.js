@@ -11,7 +11,7 @@ module.exports = function waterfall(steps, done) {
     var step = steps.shift();
     if (step) {
       if (errored(args, d)) {
-        return ;
+        return;
       }
       args.push(once(next));
       debounce(step, args);

@@ -1,6 +1,6 @@
 /* */ 
 var assert = require("assert");
-var CE = require("../index");
+var CE = require("../../custom-event@1.0.0");
 describe('CustomEvent', function() {
   describe('new CustomEvent()', function() {
     it('should create a `CustomEvent` instance', function() {

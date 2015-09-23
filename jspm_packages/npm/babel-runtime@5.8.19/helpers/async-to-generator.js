@@ -13,7 +13,7 @@ exports["default"] = function(fn) {
           var value = info.value;
         } catch (error) {
           reject(error);
-          return ;
+          return;
         }
         if (info.done) {
           resolve(value);

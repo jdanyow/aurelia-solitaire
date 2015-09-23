@@ -4,7 +4,7 @@ var _Object$defineProperty = require("../core-js/object/define-property")["defau
 exports["default"] = function(target, key, descriptors) {
   var _descriptor = descriptors[key];
   if (!_descriptor)
-    return ;
+    return;
   var descriptor = {};
   for (var _key in _descriptor)
     descriptor[_key] = _descriptor[_key];

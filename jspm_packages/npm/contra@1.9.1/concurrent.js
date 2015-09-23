@@ -25,7 +25,7 @@ module.exports = function concurrent(tasks, concurrency, done) {
     function proceed() {
       var args = atoa(arguments);
       if (errored(args, d)) {
-        return ;
+        return;
       }
       results[key] = args.shift();
       next();

@@ -20,7 +20,7 @@ module.exports = function filter(concurrency) {
       }
       if (err) {
         done(err);
-        return ;
+        return;
       }
       done(null, a(results) ? collection.filter(exists) : ofilter());
     };

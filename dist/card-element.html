@@ -1,10 +1,11 @@
 <template>
 	<div class="drag-source">
 		<div class="card-group">
-			<img src.bind="card.up ? src : 'img/back.png'" 
-					 class="card" class.bind="(card.up ? 'up' : 'down')" 
+			<img src.bind="card.up ? src : 'img/back.png'"
+					 class="card" class.bind="(card.up ? 'up' : 'down')"
 					 click.delegate="click()"
 					 draggable="false">
+			</img>
 			<card if.bind="card.next" card.bind="card.next"></card>
 		</div>
 	</div>
