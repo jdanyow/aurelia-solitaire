@@ -13,8 +13,8 @@ export class CardElement {
 		this.clickPublisher = clickPublisher;
 	}
 
-	cardChanged() {
-		this.src = this.card ? 'img/' + this.card.rank + '-' + this.card.suit.name + '.svg' : '';
+	cardChanged() {		
+		this.src = this.card ? `img/${this.card.rank}_of_${this.card.suit.name}s.png` : '';
 	}
 
 	click() {
