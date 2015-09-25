@@ -10,7 +10,7 @@ System.config({
     ]
   },
   paths: {
-    "*": "dist/*.js",
+    "*": "dist/*",
     "github:*": "jspm_packages/github/*",
     "npm:*": "jspm_packages/npm/*"
   },
@@ -25,6 +25,7 @@ System.config({
     "core-js": "npm:core-js@0.9.18",
     "css": "github:systemjs/plugin-css@0.1.13",
     "dragula": "npm:dragula@2.1.2",
+    "text": "github:systemjs/plugin-text@0.0.2",
     "github:aurelia/binding@0.9.1": {
       "aurelia-dependency-injection": "github:aurelia/dependency-injection@0.10.1",
       "aurelia-metadata": "github:aurelia/metadata@0.8.0",
